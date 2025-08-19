@@ -1,0 +1,184 @@
+/* =========================
+   Animations
+   ========================= */
+
+/* Keyframes */
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* -------------------------
+   Hero Section
+   ------------------------- */
+.hero,
+.hero .logo,
+.hero .ava,
+.hero .hero-text {
+    opacity: 0;
+    animation: fadeSlideUp 0.8s ease forwards;
+}
+
+.hero .logo {
+    animation-delay: 0.2s;
+}
+
+.hero .ava {
+    animation-delay: 0.4s;
+}
+
+.hero .hero-text {
+    animation-delay: 0.6s;
+}
+
+/* Avatar wrapper fix */
+.ava {
+    position: absolute;
+    top: 14.29%;
+    right: 0;
+    max-width: 24vw;
+    border-bottom-right-radius: var(--radius-lg);
+}
+
+.ava img {
+    width: 100%;
+    display: block;
+    border-bottom-right-radius: var(--radius-lg);
+}
+
+/* -------------------------
+   Projects (bento style)
+   ------------------------- */
+.project-item {
+    opacity: 0;
+    animation: fadeSlideUp 0.8s ease forwards;
+}
+
+.project-item:nth-child(1) {
+    animation-delay: 0.8s;
+}
+
+.project-item:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.project-item:nth-child(3) {
+    animation-delay: 1.2s;
+}
+
+/* -------------------------
+   Skills Section
+   ------------------------- */
+
+/* Pembungkus skill-list ikut animasi */
+.skill-list {
+    opacity: 0;
+    animation: fadeSlideUp 0.8s ease forwards;
+    animation-delay: 1.3s;
+}
+
+.skills-grid .skill-item {
+    opacity: 0;
+    animation: fadeSlideUp 0.6s ease forwards;
+}
+
+/* Stagger semua skill-item */
+.skills-grid .skill-item:nth-child(1) {
+    animation-delay: 1.4s;
+}
+
+.skills-grid .skill-item:nth-child(2) {
+    animation-delay: 1.5s;
+}
+
+.skills-grid .skill-item:nth-child(3) {
+    animation-delay: 1.6s;
+}
+
+.skills-grid .skill-item:nth-child(4) {
+    animation-delay: 1.7s;
+}
+
+.skills-grid .skill-item:nth-child(5) {
+    animation-delay: 1.8s;
+}
+
+.skills-grid .skill-item:nth-child(6) {
+    animation-delay: 1.9s;
+}
+
+.skills-grid .skill-item:nth-child(7) {
+    animation-delay: 2s;
+}
+
+.skills-grid .skill-item:nth-child(8) {
+    animation-delay: 2.1s;
+}
+
+.skills-grid .skill-item:nth-child(9) {
+    animation-delay: 2.2s;
+}
+
+.skills-grid .skill-item:nth-child(10) {
+    animation-delay: 2.3s;
+}
+
+.skills-grid .skill-item:nth-child(11) {
+    animation-delay: 2.4s;
+}
+
+.skills-grid .skill-item:nth-child(12) {
+    animation-delay: 2.5s;
+}
+
+.skills-grid .skill-item:nth-child(13) {
+    animation-delay: 2.6s;
+}
+
+/* Marketplace ikut animasi */
+.marketplace {
+    opacity: 0;
+    animation: fadeSlideUp 0.8s ease forwards;
+    animation-delay: 2.8s;
+}
+
+/* -------------------------
+   About, Services, Contact
+   ------------------------- */
+.about-desc,
+.service-desc {
+    opacity: 0;
+    animation: fadeSlideUp 0.8s ease forwards;
+    animation-delay: 3s;
+}
+
+/* Projects wrapper */
+.projects {
+    opacity: 0;
+    animation: fadeSlideUp 0.8s ease forwards;
+    animation-delay: 0.7s;
+    /* muncul setelah hero selesai */
+}
+
+/* Bottom container */
+.bottom-container {
+    opacity: 0;
+    animation: fadeSlideUp 0.8s ease forwards;
+    animation-delay: 2.9s;
+    /* setelah skills & marketplace */
+}
+
+/* Footer */
+.site-footer {
+    opacity: 0;
+    animation: fadeSlideUp 0.8s ease forwards;
+    animation-delay: 3.3s;
+    /* paling akhir */
+}
