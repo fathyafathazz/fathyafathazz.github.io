@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presentation Projects by Fathya</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="index_style/animation.css" />
+    <link rel="icon" href="img/icon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="page-transition fade-out">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="img/logo.png" alt="logo fathya" />
+          <h3><span>Projects and Skills / Projects / Presentation</span></h3>
+        </div>
+        <div class="navbar-links">
+          <a href="#" class="nav-link">Website</a>
+          <a href="#" class="nav-link">UI/UX Design</a>
+          <a href="#" class="nav-link active">Presentation</a>
+          <span class="indicator"></span>
+        </div>
+        <a href="#" class="hire-me">Hire Me</a>
+      </div>
+      <div class="project-grid">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-content">
+            <h3 class="card-title">Title</h3>
+            <div class="card-image">gambar</div>
+          </div>
+          <!-- Hover overlay -->
+          <div class="overlay">
+            <p class="description">Description</p>
+            <div class="tools">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-content">
+            <h3 class="card-title">Title</h3>
+            <div class="card-image">gambar</div>
+          </div>
+          <div class="overlay">
+            <p class="description">Description</p>
+            <div class="tools">
+              <span>Figma</span>
+              <span>Canva</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-content">
+            <h3 class="card-title">Title</h3>
+            <div class="card-image">gambar</div>
+          </div>
+          <div class="overlay">
+            <p class="description">Description</p>
+            <div class="tools">
+              <span>Rust</span>
+              <span>Actix</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-content">
+            <h3 class="card-title">Title</h3>
+            <div class="card-image">gambar</div>
+          </div>
+          <div class="overlay">
+            <p class="description">Description</p>
+            <div class="tools">
+              <span>Rust</span>
+              <span>Actix</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-content">
+            <h3 class="card-title">Title</h3>
+            <div class="card-image">gambar</div>
+          </div>
+          <div class="overlay">
+            <p class="description">Description</p>
+            <div class="tools">
+              <span>Rust</span>
+              <span>Actix</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-content">
+            <h3 class="card-title">Title</h3>
+            <div class="card-image">gambar</div>
+          </div>
+          <div class="overlay">
+            <p class="description">Description</p>
+            <div class="tools">
+              <span>Rust</span>
+              <span>Actix</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>Crafted in Figma and hand-coded in VS Code using HTML, CSS, and vanilla JavaScript.  
+          Deployed via GitHub Pages. Some visuals refined in Canva.  
+          Typeface: Playfair Display, Urbanist, and Plus Jakarta Sans.  
+          Written and built with <i class="fa-solid fa-heart"></i></p>
+      </div>
+    </footer>
+  </body>
+</html>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const body = document.querySelector("body");
+  body.classList.add("page-transition"); // set default
+
+  // Fade-in saat halaman baru dibuka
+  setTimeout(() => body.classList.remove("fade-out"), 50);
+
+  // Fade-out sebelum pindah halaman
+  document.querySelectorAll("a.card-link").forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const url = link.getAttribute("href");
+      body.classList.add("fade-out");
+      setTimeout(() => {
+        window.location.href = url;
+      }, 600); // sesuai durasi CSS transition
+    });
+  });
+});
+</script>

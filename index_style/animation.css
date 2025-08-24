@@ -182,3 +182,13 @@
     animation-delay: 3.3s;
     /* paling akhir */
 }
+
+/* Animasi fade */
+.page-transition {
+    opacity: 1;
+    transition: opacity 0.6s ease;
+}
+
+.page-transition.fade-out {
+    opacity: 0;
+}
