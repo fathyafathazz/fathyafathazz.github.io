@@ -25,9 +25,11 @@
   <body class="page-transition fade-out">
     <div class="container">
       <div class="navbar">
-        <div class="logo">
-          <img src="img/logo.png" alt="logo fathya" />
-          <h3><span>Projects and Skills / Projects / Presentation</span></h3>
+        <div class="logo-bg">
+          <div class="logo">
+            <img src="img/logo.png" alt="logo fathya" />
+            <h3><span>Projects and Skills / Projects / Presentation</span></h3>
+          </div>
         </div>
         <div class="navbar-links">
           <a href="#" class="nav-link">Website</a>
@@ -35,7 +37,9 @@
           <a href="#" class="nav-link active">Presentation</a>
           <span class="indicator"></span>
         </div>
-        <a href="#" class="hire-me">Hire Me</a>
+        <div class="cta-bg">
+          <a href="#" class="hire-me">Hire Me</a>
+        </div>
       </div>
       <div class="project-grid">
         <!-- Card 1 -->
@@ -130,32 +134,34 @@
     </div>
     <footer class="site-footer">
       <div class="footer-content">
-        <p>Crafted in Figma and hand-coded in VS Code using HTML, CSS, and vanilla JavaScript.  
-          Deployed via GitHub Pages. Some visuals refined in Canva.  
-          Typeface: Playfair Display, Urbanist, and Plus Jakarta Sans.  
-          Written and built with <i class="fa-solid fa-heart"></i></p>
+        <p>
+          Crafted in Figma and hand-coded in VS Code using HTML, CSS, and
+          vanilla JavaScript. Deployed via GitHub Pages. Some visuals refined in
+          Canva. Typeface: Playfair Display, Urbanist, and Plus Jakarta Sans.
+          Written and built with <i class="fa-solid fa-heart"></i>
+        </p>
       </div>
     </footer>
   </body>
 </html>
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const body = document.querySelector("body");
-  body.classList.add("page-transition"); // set default
+  document.addEventListener("DOMContentLoaded", () => {
+    const body = document.querySelector("body");
+    body.classList.add("page-transition"); // set default
 
-  // Fade-in saat halaman baru dibuka
-  setTimeout(() => body.classList.remove("fade-out"), 50);
+    // Fade-in saat halaman baru dibuka
+    setTimeout(() => body.classList.remove("fade-out"), 50);
 
-  // Fade-out sebelum pindah halaman
-  document.querySelectorAll("a.card-link").forEach(link => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      const url = link.getAttribute("href");
-      body.classList.add("fade-out");
-      setTimeout(() => {
-        window.location.href = url;
-      }, 600); // sesuai durasi CSS transition
+    // Fade-out sebelum pindah halaman
+    document.querySelectorAll("a.card-link").forEach((link) => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const url = link.getAttribute("href");
+        body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location.href = url;
+        }, 600); // sesuai durasi CSS transition
+      });
     });
   });
-});
 </script>
