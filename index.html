@@ -11,9 +11,10 @@
       name="google-site-verification"
       content="_83X3qU9XOsOjWbHz2cdFldvp4_0ifNaMpOd4ykZmyE"
     />
+    <meta name="icon" content="img/logo.png" />
     <title>
-      Fathya Fathazz Portofolio– Fullstack Developer | UI/UX Designer | PPT
-      Specialist
+      Fathya Fathazz Portofolio– Fullstack Developer | Backend Developer |
+      Frontend Developer| UI/UX Designer | PPT Specialist | Golang Developer
     </title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,6 +34,7 @@
     <link rel="stylesheet" href="index_style/animation.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="icon" href="img/icon.png" type="image/x-icon" />
+
     <meta
       name="description"
       content="Fathya Fathazz's portfolio showcasing skills, projects, and achievements."
@@ -59,6 +61,17 @@
     </script>
   </head>
   <body>
+    <!-- Modal Welcome -->
+    <div class="welcome-modal" id="welcomeModal">
+      <div class="welcome-content">
+        <h2>👋 Hi! Glad you’re here ✨</h2>
+        <p>
+          I’m Fathya — showcasing my projects and skills in design &
+          development.
+        </p>
+        <button id="startBtn">Start Exploring</button>
+      </div>
+    </div>
     <div class="top-container">
       <section class="hero">
         <div class="socmed">
@@ -320,3 +333,9 @@
     </footer>
   </body>
 </html>
+<script>
+  // Tutup modal saat klik tombol
+  document.getElementById("startBtn").addEventListener("click", () => {
+    document.getElementById("welcomeModal").style.display = "none";
+  });
+</script>

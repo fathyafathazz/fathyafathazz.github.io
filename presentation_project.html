@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Presentation Projects by Fathya</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="projects_style/style.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="index_style/animation.css" />
     <link rel="icon" href="img/icon.png" type="image/x-icon" />
@@ -21,6 +21,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-7CKH7DJDQ2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-7CKH7DJDQ2");
+    </script>
   </head>
   <body class="page-transition fade-out">
     <div class="container">
@@ -144,24 +158,3 @@
     </footer>
   </body>
 </html>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const body = document.querySelector("body");
-    body.classList.add("page-transition"); // set default
-
-    // Fade-in saat halaman baru dibuka
-    setTimeout(() => body.classList.remove("fade-out"), 50);
-
-    // Fade-out sebelum pindah halaman
-    document.querySelectorAll("a.card-link").forEach((link) => {
-      link.addEventListener("click", (e) => {
-        e.preventDefault();
-        const url = link.getAttribute("href");
-        body.classList.add("fade-out");
-        setTimeout(() => {
-          window.location.href = url;
-        }, 600); // sesuai durasi CSS transition
-      });
-    });
-  });
-</script>
