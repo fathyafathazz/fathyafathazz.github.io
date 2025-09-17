@@ -38,21 +38,6 @@
     animation-delay: 0.6s;
 }
 
-/* Avatar wrapper fix */
-.ava {
-    position: absolute;
-    top: 14.29%;
-    right: 0;
-    max-width: 24vw;
-    border-bottom-right-radius: var(--radius-lg);
-}
-
-.ava img {
-    width: 100%;
-    display: block;
-    border-bottom-right-radius: var(--radius-lg);
-}
-
 /* -------------------------
    Projects (bento style)
    ------------------------- */

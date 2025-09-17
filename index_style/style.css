@@ -32,7 +32,9 @@ body {
     z-index: 9999;
     backdrop-filter: blur(6px);
 }
-
+.bottom-nav {
+    display: none;
+}
 /* Modal Card */
 .welcome-content {
     background: var(--off-white, #ebe2d2);
@@ -142,7 +144,6 @@ body {
     position: relative;
     min-width: 55.56vw;
     height: 41.67vw;
-    border-radius: 2.64vw;
 }
 
 .logo {
@@ -182,28 +183,38 @@ body {
 
 .hero1 {
     font-family: 'Urbanist', sans-serif;
-    font-size: clamp(2.5rem, 4vw, 3.75rem);
+    font-size: clamp(2rem, 4vw, 3.75rem);
     font-weight: 400;
     color: var(--crimson);
 }
 
 .hero2 {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(2.5rem, 4vw, 3.75rem);
+    font-size: clamp(2rem, 4vw, 3.75rem);
     font-weight: 600;
     line-height: 0.9;
     color: var(--crimson);
 }
 
+.hero3 {
+    display: none;
+}
+.devider {
+    display: none;
+}
 .hero-text ul {
-    font-size: clamp(2rem, 1.5vw, 1.5rem);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
     font-weight: 300;
 }
 
-.hero-desc {
+.hero-desc .desktop {
     font-size: clamp(1rem, 1.5vw, 1.5rem);
     font-weight: 300;
-    margin-top: 17%;
+    margin-top: 25%;
+}
+
+.hero-desc .mobile {
+    display: none;
 }
 
 .hero-desc span {

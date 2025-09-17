@@ -29,6 +29,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link rel="stylesheet" href="index_style/style.css" />
     <link rel="stylesheet" href="index_style/responsive.css" />
     <link rel="stylesheet" href="animation.css" />
@@ -59,7 +60,9 @@
 
       gtag("config", "G-7CKH7DJDQ2");
     </script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
+
   <body>
     <!-- Modal Welcome -->
     <div class="welcome-modal" id="welcomeModal">
@@ -72,6 +75,17 @@
         <button id="startBtn">Start Exploring</button>
       </div>
     </div>
+    <nav class="bottom-nav">
+      <a href="#home"><i class="ph ph-house"></i><span>Home</span></a>
+      <a href="#projects"><i class="ph ph-layout"></i><span>Projects</span></a>
+      <a href="#services"
+        ><i class="ph ph-briefcase"></i><span>Services</span></a
+      >
+      <a href="#contact"
+        ><i class="ph ph-paper-plane-tilt"></i><span>Contact</span></a
+      >
+    </nav>
+
     <div class="top-container">
       <section class="hero">
         <div class="socmed">
@@ -112,25 +126,34 @@
           <img src="img/hero-image.png" alt="fathya-fathimah-azzahra" />
         </div>
         <div class="hero-text">
-          <h1>
-            <span class="hero1"> Hi! I'm </span>
-            <span class="hero2">Fathya</span>
-          </h1>
-          <h3>
-            <ul>
-              Fullstack Developer
-            </ul>
-            <ul>
-              UI/UX Designer
-            </ul>
-            <ul>
-              PPT Specialist
-            </ul>
-          </h3>
+          <div class="intro">
+            <h1>
+              <span class="hero1"> Hi! I'm </span>
+              <span class="hero2">Fathya</span>
+              <span class="hero3">Fathimah Azzahra</span>
+            </h1>
+            <div class="divider"></div>
+            <h3>
+              <ul>
+                Fullstack Developer
+              </ul>
+              <ul>
+                UI/UX Designer
+              </ul>
+              <ul>
+                PPT Specialist
+              </ul>
+            </h3>
+          </div>
           <div class="hero-desc">
-            <p class="hero-desc">
+            <p class="desktop">
               <span>Informatic Engineering Student</span>
               <span>Open for Freelance & Internships</span>
+            </p>
+            <p class="mobile">
+              Final-year Informatics Engineering student passionate about
+              full-stack development, UI/UX design, and presentation design.
+              Open to freelance & internships.
             </p>
           </div>
         </div>
