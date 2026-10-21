@@ -1,21 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="no-js">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Fathya Fathimah Azzahra | System Analyst &amp; Backend Developer
+    </title>
     <meta
       name="description"
-      content="Portofolio Fathya Fathazz, menawarkan jasa Fullstack Web Development, UI/UX Design, dan pembuatan presentasi profesional. Lihat proyek dan hubungi untuk kerja sama."
+      content="Portfolio of Fathya Fathimah Azzahra, an Informatics Engineering graduate focused on system analysis and backend development: projects, publications, registered IP (HKI) and experience."
+    />
+    <meta
+      name="keywords"
+      content="Fathya Fathimah Azzahra, Fathya Fathazz, portfolio, system analyst, backend developer, BPMN, ERD, Golang, Laravel"
+    />
+    <meta name="author" content="Fathya Fathimah Azzahra" />
+    <meta name="theme-color" content="#ebe2d2" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Fathya Fathimah Azzahra | System Analyst & Backend Developer"
+    />
+    <meta
+      property="og:description"
+      content="Projects, publications, registered IP (HKI) and experience of an Informatics Engineering graduate."
     />
     <meta
       name="google-site-verification"
       content="_83X3qU9XOsOjWbHz2cdFldvp4_0ifNaMpOd4ykZmyE"
     />
-    <meta name="icon" content="img/logo.png" />
-    <title>
-      Fathya Fathazz Portofolio– Fullstack Developer | Backend Developer |
-      Frontend Developer| UI/UX Designer | PPT Specialist | Golang Developer
-    </title>
+    <script>
+      document.documentElement.classList.replace("no-js", "js");
+    </script>
+
+    <link rel="icon" href="img/icon.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,27 +42,11 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css"
     />
 
-    <link rel="stylesheet" href="index_style/style.css" />
-    <link rel="stylesheet" href="index_style/responsive.css" />
-    <link rel="stylesheet" href="animation.css" />
-    <link rel="stylesheet" href="footer.css" />
-    <link rel="icon" href="img/icon.png" type="image/x-icon" />
-
-    <meta
-      name="description"
-      content="Fathya Fathazz's portfolio showcasing skills, projects, and achievements."
-    />
-    <meta
-      name="keywords"
-      content="Fathya Fathazz, portfolio, web developer, projects, skills"
-    />
-    <meta name="author" content="Fathya Fathazz" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -57,308 +59,1359 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-7CKH7DJDQ2");
     </script>
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
 
-  <body>
-    <!-- Modal Welcome -->
-    <div class="welcome-modal" id="welcomeModal">
-      <div class="welcome-content">
-        <h2>👋 Hi! Glad you’re here ✨</h2>
-        <p>
-          I’m Fathya — showcasing my projects and skills in design &
-          development.
-        </p>
-        <button id="startBtn">Start Exploring</button>
-      </div>
-    </div>
-    <nav class="bottom-nav">
-      <a href="#home"><i class="ph ph-house"></i><span>Home</span></a>
-      <a href="#projects"><i class="ph ph-layout"></i><span>Projects</span></a>
-      <a href="#services"
-        ><i class="ph ph-briefcase"></i><span>Services</span></a
-      >
-      <a href="#contact"
-        ><i class="ph ph-paper-plane-tilt"></i><span>Contact</span></a
-      >
-    </nav>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <div class="top-container">
-      <section class="hero">
-        <div class="socmed">
-          <ul>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <a
+        href="#top"
+        class="brand-text"
+        aria-label="Fathya Fathimah Azzahra, back to top"
+      >
+        <span class="brand-full">Fathya Fathimah Azzahra</span>
+        <span class="brand-short">Fathya Azzahra</span>
+      </a>
+
+      <div class="nav-center" aria-hidden="true">
+        <img src="img/icon.png" alt="" class="nav-icon" />
+      </div>
+
+      <nav class="nav-right" aria-label="Primary">
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <i class="ph ph-list" aria-hidden="true"></i>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#projects">Projects</a>
+          <a href="#research">Research</a>
+          <a href="#experience">Experience</a>
+          <button type="button" class="nav-cta" data-open-contact="email">
+            Contact
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="bento-grid">
+      <!-- ================= INTRO ================= -->
+      <div class="intro">
+        <section class="bento hero reveal" aria-labelledby="hero-title">
+          <p class="status-chip">
+            <span class="pulse" aria-hidden="true"></span>
+            Open to work · System Analyst / Backend Developer
+          </p>
+          <h1 id="hero-title">
+            <span class="line">Thoughtfully built.</span>
+            <span class="line line-2">Clearly delivered.</span>
+          </h1>
+          <p class="hero-lead">
+            I'm Fathya Fathimah Azzahra, an Informatics Engineering graduate who
+            turns business processes into clear system designs and working
+            software, from BPMN and ERD to Go and Laravel.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              View projects <i class="ph ph-arrow-down" aria-hidden="true"></i>
+            </a>
+            <button
+              type="button"
+              class="btn btn-ghost"
+              data-open-contact="email"
+            >
+              Get in touch
+            </button>
+          </div>
+        </section>
+
+        <section class="bento profile-card reveal" aria-label="Portrait">
+          <img
+            src="img/hero-image.png"
+            alt="Portrait of Fathya Fathimah Azzahra"
+          />
+        </section>
+
+        <section class="bento glance reveal" aria-labelledby="glance-title">
+          <h3 class="card-label" id="glance-title">At a glance</h3>
+          <div class="stat-grid">
+            <div class="stat">
+              <strong>3.80</strong>
+              <span>GPA, D4 Informatics Engineering</span>
+            </div>
+            <div class="stat">
+              <strong>2</strong>
+              <span>Journal articles (SINTA 3 &amp; 4)</span>
+            </div>
+            <div class="stat">
+              <strong>1</strong>
+              <span>Book, co-authored</span>
+            </div>
+            <div class="stat">
+              <strong>3</strong>
+              <span>Registered IP rights (HKI)</span>
+            </div>
+          </div>
+          <p class="glance-foot">
+            <i class="ph ph-map-pin" aria-hidden="true"></i> Cimahi, West Java
+          </p>
+        </section>
+
+        <section id="about" class="bento about-me reveal">
+          <h3 class="card-label">About me</h3>
+          <h2 class="name">Hi, I'm Fathya Fathimah Azzahra.</h2>
+          <p>
+            D4 Informatics Engineering graduate (ULBI, GPA 3.80) who enjoys the
+            space between business needs and working systems. Through
+            internships at Perum DAMRI and Museum Geologi I mapped processes
+            with BPMN, designed DFD, ERD and UI/UX prototypes, and wrote
+            technical documentation. I build web applications with Laravel and
+            Golang.
+          </p>
+        </section>
+
+        <section class="bento connect reveal">
+          <h3 class="card-label">Connect</h3>
+          <div class="connect-grid">
+            <a
+              class="tile"
+              href="https://www.linkedin.com/in/fathya-fathimah-azzahra"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="ph ph-linkedin-logo" aria-hidden="true"></i>
+              <span>LinkedIn</span>
+            </a>
+            <!-- GitHub: link diisi lewat CONFIG.links.github di script.js. Selama masih kosong, tile ini otomatis tersembunyi. -->
+            <a class="tile" data-link="github" hidden>
+              <i class="ph ph-github-logo" aria-hidden="true"></i>
+              <span>GitHub</span>
+            </a>
+          </div>
+          <a href="#projects" class="explore-pill">
+            <span>Explore projects</span>
+            <i class="ph ph-arrow-down" aria-hidden="true"></i>
+          </a>
+        </section>
+      </div>
+      <section class="bento tools reveal">
+        <h3 class="card-label">Tools &amp; stack</h3>
+        <div class="tool-groups">
+          <div class="tool-group">
+            <h4>Analysis &amp; design</h4>
+            <ul class="chips">
+              <li>BPMN (Bizagi)</li>
+              <li>DFD</li>
+              <li>ERD</li>
+              <li>Figma</li>
+              <li>Technical documentation</li>
+            </ul>
+          </div>
+          <div class="tool-group">
+            <h4>Development</h4>
+            <ul class="chips">
+              <li>Golang</li>
+              <li>PHP</li>
+              <li>Laravel</li>
+              <li>CodeIgniter 4</li>
+              <li>JavaScript</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+          <div class="tool-group">
+            <h4>Data &amp; databases</h4>
+            <ul class="chips">
+              <li>SQL</li>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+              <li>Python</li>
+              <li>Random Forest</li>
+              <li class="muted">Oracle (basic)</li>
+            </ul>
+          </div>
+          <div class="tool-group">
+            <h4>Tools</h4>
+            <ul class="chips">
+              <li>Git &amp; GitHub</li>
+              <li>Postman</li>
+              <li>Excel</li>
+              <li>Canva</li>
+              <li class="muted">SAP ABAP (basic)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PROJECTS ================= -->
+      <div id="projects" class="section-title reveal">
+        <div>
+          <span class="eyebrow">Selected work</span>
+          <h2>Systems I've <em>designed &amp; built</em></h2>
+        </div>
+        <p>Open any card for the role, what I did and the stack behind it.</p>
+      </div>
+
+      <article
+        class="bento project p-7 reveal"
+        data-modal="tpl-thesis"
+        role="button"
+        tabindex="0"
+        aria-label="Open details: Resume Screening Decision Support System"
+      >
+        <span class="project-index" aria-hidden="true">01</span>
+        <span class="kicker">Thesis · ML / NLP</span>
+        <h3>Resume Screening Decision Support System</h3>
+        <p>
+          Prototype that ranks candidates by matching score across 32 job roles,
+          built on research comparing TF-IDF and S-BERT with Random Forest.
+        </p>
+        <ul class="chips">
+          <li>Python</li>
+          <li>TF-IDF</li>
+          <li>Sentence-BERT</li>
+          <li>Random Forest</li>
+        </ul>
+        <span class="project-more"
+          >View details <i class="ph ph-arrow-up-right" aria-hidden="true"></i
+        ></span>
+      </article>
+
+      <article
+        class="bento project p-5 reveal"
+        data-modal="tpl-kos"
+        role="button"
+        tabindex="0"
+        aria-label="Open details: KosConnect"
+      >
+        <span class="project-index" aria-hidden="true">02</span>
+        <span class="kicker">Fullstack · Live</span>
+        <h3>KosConnect</h3>
+        <p>
+          Boarding-house rental platform with admin, owner and seeker roles,
+          Google login and Midtrans payments.
+        </p>
+        <ul class="chips">
+          <li>Go</li>
+          <li>MongoDB</li>
+          <li>Midtrans</li>
+          <li>Google OAuth</li>
+        </ul>
+        <span class="project-more"
+          >View details <i class="ph ph-arrow-up-right" aria-hidden="true"></i
+        ></span>
+      </article>
+
+      <article
+        class="bento project p-5 reveal"
+        data-modal="tpl-dhcip"
+        role="button"
+        tabindex="0"
+        aria-label="Open details: DHCIP HR Analytics Platform"
+      >
+        <span class="project-index" aria-hidden="true">03</span>
+        <span class="kicker">Perum DAMRI · System analysis</span>
+        <h3>DHCIP HR Analytics Platform</h3>
+        <p>
+          Process mapping, UI/UX for 3 user roles, a Nine-Box Talent Matrix and
+          AI-based talent recommendations. Registered as HKI.
+        </p>
+        <ul class="chips">
+          <li>BPMN</li>
+          <li>Figma</li>
+          <li>CodeIgniter 4</li>
+          <li>HKI</li>
+        </ul>
+        <span class="project-more"
+          >View details <i class="ph ph-arrow-up-right" aria-hidden="true"></i
+        ></span>
+      </article>
+
+      <article
+        class="bento project p-7 reveal"
+        data-modal="tpl-museum"
+        role="button"
+        tabindex="0"
+        aria-label="Open details: Asset Damage Monitoring System design"
+      >
+        <span class="project-index" aria-hidden="true">04</span>
+        <span class="kicker">Museum Geologi · System design</span>
+        <h3>Digital Monitoring System for Asset Damage</h3>
+        <p>
+          System design from process flow to screens: DFD, ERD and high-fidelity
+          UI mockups for monitoring damage to museum assets.
+        </p>
+        <ul class="chips">
+          <li>DFD</li>
+          <li>ERD</li>
+          <li>UI mockups</li>
+        </ul>
+        <span class="project-more"
+          >View details <i class="ph ph-arrow-up-right" aria-hidden="true"></i
+        ></span>
+      </article>
+
+      <article
+        class="bento project p-6 reveal"
+        data-modal="tpl-logic"
+        role="button"
+        tabindex="0"
+        aria-label="Open details: LogicCoffee"
+      >
+        <span class="project-index" aria-hidden="true">05</span>
+        <span class="kicker">Fullstack · Live</span>
+        <h3>LogicCoffee</h3>
+        <p>
+          Coffee shop web app with a WhatsApp-based login, built with Go,
+          MongoDB and vanilla JavaScript.
+        </p>
+        <ul class="chips">
+          <li>Go</li>
+          <li>MongoDB</li>
+          <li>Vanilla JS</li>
+        </ul>
+        <span class="project-more"
+          >View details <i class="ph ph-arrow-up-right" aria-hidden="true"></i
+        ></span>
+      </article>
+
+      <article
+        class="bento project p-6 reveal"
+        data-modal="tpl-explora"
+        role="button"
+        tabindex="0"
+        aria-label="Open details: Trade Monitoring Platform for Explora Nusantara"
+      >
+        <span class="project-index" aria-hidden="true">06</span>
+        <span class="kicker">Freelance · Backend &amp; maintenance</span>
+        <h3>Trade Monitoring Platform</h3>
+        <p>
+          Freelance maintenance for Explora Nusantara: access control, real-time
+          dashboard data and order-status rules.
+        </p>
+        <ul class="chips">
+          <li>Laravel 11</li>
+          <li>Livewire</li>
+          <li>MySQL</li>
+        </ul>
+        <span class="project-more"
+          >View details <i class="ph ph-arrow-up-right" aria-hidden="true"></i
+        ></span>
+      </article>
+
+      <!-- ================= RESEARCH ================= -->
+      <div id="research" class="section-title reveal">
+        <div>
+          <span class="eyebrow">Research &amp; recognition</span>
+          <h2>Publications, <em>HKI &amp; awards</em></h2>
+        </div>
+        <p>Peer-reviewed work, a published book and registered IP rights.</p>
+      </div>
+
+      <article class="bento ach a-4 reveal">
+        <div class="ach-top">
+          <span class="ach-icon"
+            ><i class="ph ph-flask" aria-hidden="true"></i
+          ></span>
+          <span class="badge">SINTA 3 · 2026</span>
+        </div>
+        <h3>
+          Comparative Study of TF-IDF and SBERT Feature Representations for
+          Random Forest Based Resume Classification
+        </h3>
+        <p class="meta">Jurnal Sinkron · Journal article</p>
+        <a class="link-btn ach-action" data-link="pubSinkron" hidden>
+          Read the article
+          <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+        </a>
+      </article>
+
+      <article class="bento ach a-4 reveal">
+        <div class="ach-top">
+          <span class="ach-icon"
+            ><i class="ph ph-flask" aria-hidden="true"></i
+          ></span>
+          <span class="badge">SINTA 4 · 2025</span>
+        </div>
+        <h3>
+          Integrasi Google OAuth dan Payment Gateway Midtrans dalam KosConnect
+        </h3>
+        <p class="meta">Jurnal Processor · Journal article</p>
+        <a class="link-btn ach-action" data-link="pubProcessor" hidden>
+          Read the article
+          <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+        </a>
+      </article>
+
+      <article class="bento ach a-4 reveal">
+        <div class="ach-top">
+          <span class="ach-icon"
+            ><i class="ph ph-book-open" aria-hidden="true"></i
+          ></span>
+          <span class="badge">Book · 2024</span>
+        </div>
+        <h3>
+          Tutorial Membuat Sistem Informasi Inventory Baju (PHP &amp; MySQL)
+        </h3>
+        <p class="meta">Co-authored · PT. Penerbit Bukupedia</p>
+        <a class="link-btn ach-action" data-link="book" hidden>
+          View the book
+          <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+        </a>
+      </article>
+
+      <article
+        class="bento ach a-4 is-action reveal"
+        data-modal="tpl-hki"
+        role="button"
+        tabindex="0"
+        aria-label="Open details: Registered IP rights (HKI)"
+      >
+        <div class="ach-top">
+          <span class="ach-icon"
+            ><i class="ph ph-seal-check" aria-hidden="true"></i
+          ></span>
+          <span class="badge">3 registered</span>
+        </div>
+        <h3>Intellectual Property Rights (HKI)</h3>
+        <p class="meta">
+          DHCIP Software · DHCIP User Manual · Export Transaction Innovation
+          Module for MSMEs
+        </p>
+        <span class="link-btn ach-action"
+          >See details <i class="ph ph-arrow-up-right" aria-hidden="true"></i
+        ></span>
+      </article>
+
+      <article class="bento ach a-4 reveal">
+        <div class="ach-top">
+          <span class="ach-icon"
+            ><i class="ph ph-trophy" aria-hidden="true"></i
+          ></span>
+          <span class="badge">Award · 2025</span>
+        </div>
+        <h3>Outstanding Student Award</h3>
+        <p class="meta">
+          Industry-Driven Research Commercialization Program · Kemendiktisaintek
+          RI with Perum DAMRI
+        </p>
+      </article>
+
+      <article
+        class="bento ach a-4 is-action reveal"
+        data-modal="tpl-certs"
+        role="button"
+        tabindex="0"
+        aria-label="Open the certificates gallery"
+      >
+        <div class="ach-top">
+          <span class="ach-icon"
+            ><i class="ph ph-certificate" aria-hidden="true"></i
+          ></span>
+          <span class="badge">Gallery</span>
+        </div>
+        <h3>Certificates &amp; documents</h3>
+        <p class="meta">Award and HKI documents in one place.</p>
+        <span class="link-btn ach-action"
+          >Open gallery <i class="ph ph-arrow-up-right" aria-hidden="true"></i
+        ></span>
+      </article>
+
+      <!-- ================= EXPERIENCE ================= -->
+      <div id="experience" class="section-title reveal">
+        <div>
+          <span class="eyebrow">Experience &amp; education</span>
+          <h2>Where I've <em>worked &amp; learned</em></h2>
+        </div>
+        <p>Tap a role to see what I worked on.</p>
+      </div>
+
+      <section class="bento experience reveal" aria-label="Experience">
+        <article class="exp-item open">
+          <button
+            type="button"
+            class="exp-head"
+            aria-expanded="true"
+            aria-controls="exp-damri"
+          >
+            <span class="exp-title">
+              <strong>Perum DAMRI</strong>
+              <span>Intern, Digital Services · Hybrid</span>
+            </span>
+            <span class="exp-date">Oct 2025 – Dec 2025</span>
+            <span class="exp-icon"
+              ><i class="ph ph-plus" aria-hidden="true"></i
+            ></span>
+          </button>
+          <div class="exp-body" id="exp-damri">
+            <div class="exp-inner">
+              <ul>
+                <li>
+                  Mapped business processes using BPMN (Bizagi) for DHCIP, an HR
+                  analytics platform, clarifying workflow logic for the
+                  development team.
+                </li>
+                <li>
+                  Designed nearly all Figma UI/UX for DHCIP's 3 core user roles,
+                  including a Nine-Box Talent Matrix visualization and an
+                  AI-based talent recommendation interface.
+                </li>
+                <li>
+                  Compiled the application user manual, registered as
+                  Intellectual Property (HKI) alongside the software.
+                </li>
+                <li>
+                  Developed front-end components with Tailwind CSS and
+                  CodeIgniter 4.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="exp-item">
+          <button
+            type="button"
+            class="exp-head"
+            aria-expanded="false"
+            aria-controls="exp-museum"
+          >
+            <span class="exp-title">
+              <strong>Museum Geologi (KESDM RI)</strong>
+              <span
+                >Intern, Exhibition &amp; Public Service Team · Bandung</span
+              >
+            </span>
+            <span class="exp-date">Aug 2024 – Oct 2024</span>
+            <span class="exp-icon"
+              ><i class="ph ph-plus" aria-hidden="true"></i
+            ></span>
+          </button>
+          <div class="exp-body" id="exp-museum">
+            <div class="exp-inner">
+              <ul>
+                <li>
+                  Designed DFD, ERD and high-fidelity UI mockups for a digital
+                  monitoring system for asset damage.
+                </li>
+                <li>
+                  Supported the WBK integrity effort by reformatting official
+                  documents and creating a feedback form.
+                </li>
+                <li>
+                  Conducted sentiment analysis on Google Reviews and visualized
+                  the results with Voyant Tools.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="exp-item">
+          <button
+            type="button"
+            class="exp-head"
+            aria-expanded="false"
+            aria-controls="exp-garis"
+          >
+            <span class="exp-title">
+              <strong>Ruang Garis, Kids Fashion</strong>
+              <span>Online Shop &amp; Operations Administrator · Cimahi</span>
+            </span>
+            <span class="exp-date">Apr 2026 – Present</span>
+            <span class="exp-icon"
+              ><i class="ph ph-plus" aria-hidden="true"></i
+            ></span>
+          </button>
+          <div class="exp-body" id="exp-garis">
+            <div class="exp-inner">
+              <ul>
+                <li>
+                  Reconcile Shopee Ads and TikTok GMV Max dashboard data with
+                  actual orders to correct over-reported results within a
+                  limited budget.
+                </li>
+                <li>
+                  Built an Excel pricing calculator to compute COGS, margin,
+                  discounts and net revenue after marketplace fees.
+                </li>
+                <li>
+                  Prepare 32 delivery notes and 5 invoices monthly for garment
+                  contract manufacturing orders, and support quality control.
+                </li>
+                <li>
+                  Processed the owner's PT Perorangan incorporation through AHU
+                  and registered the business on OSS until the NIB was issued.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="exp-item">
+          <button
+            type="button"
+            class="exp-head"
+            aria-expanded="false"
+            aria-controls="exp-explora"
+          >
+            <span class="exp-title">
+              <strong>Explora Nusantara</strong>
+              <span>Freelance Web Developer &amp; Maintainer · Remote</span>
+            </span>
+            <span class="exp-date">Sept 2025 – Apr 2026</span>
+            <span class="exp-icon"
+              ><i class="ph ph-plus" aria-hidden="true"></i
+            ></span>
+          </button>
+          <div class="exp-body" id="exp-explora">
+            <div class="exp-inner">
+              <ul>
+                <li>
+                  Provided maintenance across 3 work periods (~2 weeks total)
+                  for a trade-monitoring platform prototype, using Laravel 11,
+                  Livewire, Blade, Tailwind CSS and MySQL.
+                </li>
+                <li>
+                  Fixed Zoom meeting access control, replaced dummy dashboard
+                  data with real-time data, and enforced order status rules.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <!-- fiksioner -->
+        <article class="exp-item">
+          <button
+            type="button"
+            class="exp-head"
+            aria-expanded="false"
+            aria-controls="exp-fiksioner"
+          >
+            <span class="exp-title">
+              <strong>Fiksioner Indonesia</strong>
+              <span
+                >Community organization · creative, web &amp; social media
+                roles</span
+              >
+            </span>
+            <span class="exp-date">2020 – May 2026</span>
+            <span class="exp-icon"
+              ><i class="ph ph-plus" aria-hidden="true"></i
+            ></span>
+          </button>
+          <div class="exp-body" id="exp-fiksioner">
+            <div class="exp-inner">
+              <ul>
+                <li>
+                  <strong>Social Media Specialist</strong> (Apr 2024 – May
+                  2026): planned and scheduled content across Instagram,
+                  LinkedIn and other platforms, wrote platform-tailored
+                  captions, and monitored engagement metrics to optimize the
+                  content strategy.
+                </li>
+                <li>
+                  <strong>IT Staff, Media &amp; Communication</strong> (Mar 2023
+                  – Feb 2024): designed and developed the official website
+                  prototype with Elementor and WordPress, including responsive
+                  layout and interactive components.
+                </li>
+                <li>
+                  <strong>Head of Creative Center Division</strong> (Feb 2022 –
+                  Feb 2023): led the events and concept division, directed
+                  design and branding initiatives, supervised visual production
+                  for campaigns, and managed the creative direction of FUNSIONER
+                  4 from ideation to execution.
+                </li>
+                <li>
+                  <strong>Event concepts I originated or guided</strong>:
+                  Fiksiotalk (for prospective FIKSI participants), Fiksioclass
+                  (for FIKSI finalists), Podcasioner and Fiksiolive (Instagram
+                  Live). Guided Talkpreneur, a seminar and talkshow series on
+                  Zoom, from its start in 2020.
+                </li>
+                <li>
+                  <strong>Earlier roles</strong> (2020 – 2022): Deputy and
+                  Creative Manager, Business &amp; Creative Center (coordinated
+                  FUNSIONER 2 design, stage visuals and merchandise); Deputy and
+                  Program Staff, Research &amp; Development.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="exp-item">
+          <button
+            type="button"
+            class="exp-head"
+            aria-expanded="false"
+            aria-controls="exp-kemendikbud"
+          >
+            <span class="exp-title">
+              <strong>Kemendikbud RI, national events</strong>
+              <span
+                >Volunteer liaison and content roles for Kemendikbud national
+                programs, representing Fiksioner Indonesia</span
+              >
+            </span>
+            <span class="exp-date">2020 – 2022</span>
+            <span class="exp-icon"
+              ><i class="ph ph-plus" aria-hidden="true"></i
+            ></span>
+          </button>
+          <div class="exp-body" id="exp-kemendikbud">
+            <div class="exp-inner">
+              <ul>
+                <li>
+                  <strong>Liaison Coordinator (SMA), FIKSI 2022</strong> (Aug –
+                  Nov 2022): led the SMA liaison officer team at the national
+                  competition, oversaw participant communication and problem
+                  resolution, and coordinated briefings, schedules and reporting
+                  with the national committee.
+                </li>
+                <li>
+                  <strong>Content Narrative Team, SMA BERKIBAR 2022</strong>
+                  (Jun – Aug 2022): represented Fiksioner Indonesia, drafted,
+                  edited and finalized narrative content, and joined a multi-day
+                  strategic content session with the Ministry of Education in
+                  Bogor.
+                </li>
+                <li>
+                  <strong>Liaison Officer, FIKSI SMK 2021 and FeLSI 2021</strong
+                  >: handled participant communication, scheduled judging and
+                  mentoring sessions, verified registration files, and
+                  facilitated information flow between committee and juries.
+                </li>
+                <li>
+                  <strong>Liaison Officer, FIKSI 2020</strong> (Sept – Oct
+                  2020): assisted online competition management, briefings and
+                  virtual room monitoring.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <div class="side-stack">
+        <section class="bento edu reveal" aria-label="Education">
+          <h3 class="card-label">Education</h3>
+          <h4 class="edu-school">
+            Universitas Logistik dan Bisnis Internasional (ULBI)
+          </h4>
+          <p class="edu-degree">
+            D4 Teknik Informatika · <strong>GPA 3.80</strong>
+          </p>
+          <p class="edu-meta">Sept 2022 – Aug 2026 · Bandung, West Java</p>
+          <p class="edu-thesis">
+            <span>Thesis</span> Comparison of TF-IDF and S-BERT with Random
+            Forest for a Resume Screening Decision Support System
+          </p>
+          <ul class="chips">
+            <li>Backend Development</li>
+            <li>Frontend Development</li>
+            <li>Web Programming</li>
+            <li>UI/UX Design</li>
+            <li>SAP ABAP</li>
+          </ul>
+        </section>
+
+        <section
+          class="bento lead reveal"
+          aria-label="Leadership and activities"
+        >
+          <h3 class="card-label">Leadership &amp; activities</h3>
+          <ul class="lead-list">
+            <button
+              type="button"
+              class="link-btn ach-action"
+              data-modal="tpl-moments"
+            >
+              View photos
+              <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+            </button>
             <li>
-              <a href="https://www.instagram.com/fathyafathazz" target="_blank"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
+              <span class="lead-icon"
+                ><i class="ph ph-users-three" aria-hidden="true"></i
+              ></span>
+              <div>
+                <strong>Mentor PKKMB 2023</strong>
+                <em>ULBI · Aug – Sept 2023</em>
+                <p>
+                  Guided 20+ new students through campus orientation and
+                  academic onboarding.
+                </p>
+              </div>
             </li>
             <li>
-              <a
-                href="https://www.linkedin.com/in/fathya-fathimah-azzahra"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://github.com/fathyafathazz" target="_blank"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://medium.com/@fathyafathazzra" target="_blank"
-                ><i class="fa-brands fa-medium"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/@fathyafathazzra" target="_blank"
-                ><i class="fa-brands fa-youtube"></i
-              ></a>
+              <span class="lead-icon"
+                ><i class="ph ph-microphone-stage" aria-hidden="true"></i
+              ></span>
+              <div>
+                <strong>Master of Ceremony (MC)</strong>
+                <em>ULBI campus events</em>
+                <p>Hosted university events as Master of Ceremony.</p>
+              </div>
             </li>
           </ul>
-        </div>
-        <div class="logo">
-          <img src="img/logo.png" alt="logo fathya" />
-        </div>
-        <div class="ava">
-          <img src="img/hero-image.png" alt="fathya-fathimah-azzahra" />
-        </div>
-        <div class="hero-text">
-          <div class="intro">
-            <h1>
-              <span class="hero1"> Hi! I'm </span>
-              <span class="hero2">Fathya</span>
-              <span class="hero3">Fathimah Azzahra</span>
-            </h1>
-            <div class="divider"></div>
-            <h3>
-              <ul>
-                Fullstack Developer
-              </ul>
-              <ul>
-                UI/UX Designer
-              </ul>
-              <ul>
-                PPT Specialist
-              </ul>
-            </h3>
-          </div>
-          <div class="hero-desc">
-            <p class="desktop">
-              <span>Informatic Engineering Student</span>
-              <span>Open for Freelance & Internships</span>
-            </p>
-            <p class="mobile">
-              Final-year Informatics Engineering student passionate about
-              full-stack development, UI/UX design, and presentation design.
-              Open to freelance & internships.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="projects">
-        <h3>Projects and Skills</h3>
-        <div class="projects-container">
-          <div class="left-column">
-            <div class="project-item">
-              <div class="tag one">
-                <h4>Website</h4>
-              </div>
-              <div class="projectimg">
-                <img
-                  src="img/project11.jpg"
-                  alt="Fullstack Web Project oleh Fathya Fathimah – Frontend & Backend Development / Proyek Web Fullstack oleh Fathya Fathimah – Frontend & Backend"
-                />
-              </div>
-              <div class="curve_one web"></div>
-              <div class="curve_two web"></div>
-              <div class="overlay">
-                <i class="fas fa-search-plus"></i>
-              </div>
-            </div>
-            <div class="project-item">
-              <div class="tag right">
-                <h4>UI/UX</h4>
-              </div>
-              <div class="projectimg">
-                <img
-                  src="img/project21.png"
-                  alt="UI/UX Design Portfolio oleh Fathya Fathimah – App & Website Design / Portofolio Desain UI/UX oleh Fathya Fathimah – Aplikasi & Website"
-                />
-                <div class="overlay">
-                  <i class="fas fa-search-plus"></i>
-                </div>
-              </div>
-              <div class="curve_one ui"></div>
-              <div class="curve_two ui"></div>
-            </div>
-            <div class="project-item">
-              <a href="presentation_project.html">
-                <div class="tag two">
-                  <h4>Presentation</h4>
-                </div>
-                <div class="curve_one ppt"></div>
-                <div class="curve_two ppt"></div>
-                <div class="projectimg">
-                  <img
-                    src="img/project3.jpg"
-                    alt="PPT Specialist oleh Fathya Fathimah – Professional, Attractive, Redesign using Canva Pro / Spesialis PPT oleh Fathya Fathimah – Profesional, Menarik, Redesign pakai Canva Pro"
-                  />
-                  <div class="overlay">
-                    <i class="fas fa-search-plus"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="right-column">
-            <div class="skill-list">
-              <h4>Skills</h4>
-              <div class="skills-grid">
-                <!-- Languages -->
-                <div class="skill-item">
-                  <i class="fa-brands fa-html5" title="HTML"></i>
-                </div>
-                <div class="skill-item">
-                  <i class="fa-brands fa-css" title="CSS"></i>
-                </div>
-                <div class="skill-item hover-svg">
-                  <i class="fa-brands fa-js" title="JavaScript"></i>
-                  <img
-                    src="img/javascript-svgrepo-com.svg"
-                    alt="JavaScript"
-                    title="JavaScript"
-                  />
-                </div>
-                <div class="skill-item hover-svg">
-                  <i class="fa-brands fa-php" title="PHP"></i>
-                  <img src="img/PHP-logo.svg" alt="PHP" title="PHP" />
-                </div>
-                <div class="skill-item">
-                  <i class="fa-brands fa-golang" title="Golang"></i>
-                  <img src="img/golang.svg" alt="Golang" title="Golang" />
-                </div>
-                <div class="skill-item hover-svg">
-                  <i class="fa-brands fa-python" title="Python"></i>
-                  <img
-                    src="img/python-svgrepo-com.svg"
-                    alt="Python"
-                    title="Python"
-                  />
-                </div>
-                <div class="skill-item">
-                  <i class="fa-brands fa-laravel" title="Laravel"></i>
-                </div>
-                <!-- Database -->
-                <div
-                  class="skill-item hover-svg"
-                  data-svg="img/mysql-logo-pure.svg"
-                >
-                  <img
-                    src="img/mysql-logo-pure.svg"
-                    alt="MySQL"
-                    title="MySQL"
-                  />
-                </div>
-                <div
-                  class="skill-item hover-svg"
-                  data-svg="img/mongodb-icon-1.svg"
-                >
-                  <img
-                    src="img/mongodb-icon-1.svg"
-                    alt="MongoDB"
-                    title="MongoDB"
-                  />
-                </div>
-                <!-- Tools -->
-                <div class="skill-item hover-svg">
-                  <i class="fa-brands fa-figma" title="Figma"></i>
-                  <img
-                    src="img/figma-svgrepo-com.svg"
-                    alt="Figma"
-                    title="Figma"
-                  />
-                </div>
-                <div class="skill-item hover-svg">
-                  <img
-                    src="img/postman-before.svg"
-                    alt="Postman"
-                    title="Postman"
-                  />
-                </div>
-                <div class="skill-item hover-svg">
-                  <img src="img/canva-before.svg" alt="Canva" title="Canva" />
-                </div>
-                <div class="skill-item">
-                  <i class="fa-brands fa-git-alt" title="Git"></i>
-                </div>
-              </div>
-            </div>
-            <div class="marketplace">
-              <h4>Collab With Me</h4>
-              <!-- <p>Upwork, Fiverr...</p> -->
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <div class="bottom-container">
-      <section class="about">
-        <div class="about-desc">
-          <h3>About</h3>
-          <h2>Fathya Fathimah Azzahra</h2>
-          <p>
-            Final-year Informatics Engineering student passionate about
-            full-stack development, UI/UX design, and presentation design. Eager
-            to collaborate on impactful freelance or internship projects.
-          </p>
-        </div>
-      </section>
-      <section class="services">
-        <div class="service-desc">
-          <div class="services-left">
-            <h3>Services & Experience</h3>
-            <ul>
-              <li>Fullstack Web Development</li>
-              <li>UI/UX Design</li>
-              <li>Professional Slide Design</li>
-            </ul>
-            <a href="#" class="btn-outline">View Full Experience</a>
-          </div>
-          <div class="services-right">
-            <h3>Contact</h3>
-            <p>Let’s create something meaningful together!</p>
-            <p>You can reach me via:</p>
-            <div class="contact-email">
-              <i class="fa-regular fa-envelope"></i>
-              <a href="mailto:fathyafathazzra@gmail.com"
-                >fathyafathazzra@gmail.com</a
-              >
-            </div>
-            <a href="mailto:fathyafathazzra@gmail.com" class="btn-fill"
-              >Let’s Talk</a
-            >
-          </div>
-        </div>
-      </section>
-    </div>
-    <footer class="site-footer">
-      <div class="footer-content">
-        <p>
-          Crafted in Figma and hand-coded in VS Code using HTML, CSS, and
-          vanilla JavaScript. Deployed via GitHub Pages. Some visuals refined in
-          Canva. Typeface: Playfair Display, Urbanist, and Plus Jakarta Sans.
-          Written and built with <i class="fa-solid fa-heart"></i>
-        </p>
+        </section>
       </div>
+
+      <!-- ================= CONTENT + CONTACT ================= -->
+      <section class="bento writing reveal" aria-label="Tutorials and writing">
+        <h3 class="card-label">Tutorials &amp; writing</h3>
+        <a
+          class="link-row"
+          href="https://www.youtube.com/@fathyafathazzra"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="link-icon"
+            ><i class="ph ph-youtube-logo" aria-hidden="true"></i
+          ></span>
+          <span class="link-text">
+            <strong>YouTube</strong>
+            <span>Step-by-step tutorials</span>
+          </span>
+          <i class="ph ph-arrow-up-right link-arrow" aria-hidden="true"></i>
+        </a>
+        <a
+          class="link-row"
+          href="https://medium.com/@fathyafathazzra"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="link-icon"
+            ><i class="ph ph-medium-logo" aria-hidden="true"></i
+          ></span>
+          <span class="link-text">
+            <strong>Medium</strong>
+            <span>Articles from my studies</span>
+          </span>
+          <i class="ph ph-arrow-up-right link-arrow" aria-hidden="true"></i>
+        </a>
+      </section>
+
+      <section id="contact" class="bento contact reveal">
+        <span class="eyebrow">Contact</span>
+        <h2>Let's build something meaningful.</h2>
+        <p>
+          I'm open to System Analyst and Backend Developer opportunities. Email
+          is the best way to reach me, and I'm happy to share my CV on request.
+        </p>
+        <div class="contact-actions">
+          <button type="button" class="btn btn-light" data-open-contact="email">
+            <i class="ph ph-envelope-simple" aria-hidden="true"></i> Email me
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-light"
+            data-open-contact="cv"
+          >
+            <i class="ph ph-file-text" aria-hidden="true"></i> Request my CV
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        © 2026 Fathya Fathimah Azzahra · Hand-coded with HTML, CSS and
+        JavaScript.
+      </p>
     </footer>
+
+    <!-- ================= MODAL SHELL ================= -->
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close></div>
+      <div class="modal-panel" role="dialog" aria-modal="true" tabindex="-1">
+        <button
+          type="button"
+          class="modal-close"
+          data-close
+          aria-label="Close dialog"
+        >
+          <i class="ph ph-x" aria-hidden="true"></i>
+        </button>
+        <div class="modal-body" id="modal-body"></div>
+      </div>
+    </div>
+
+    <!-- =========================================================
+         MODAL CONTENT (templates). Edit the text here.
+         ========================================================= -->
+
+    <!-- Contact: email -->
+    <template id="tpl-contact-email">
+      <p class="modal-kicker">Get in touch</p>
+      <h2 class="modal-title">Let's talk</h2>
+      <p class="modal-lead">
+        To keep my details away from spam bots, my email address is only shown
+        here on request. Write to me about roles, projects or collaborations.
+      </p>
+      <div class="email-box">
+        <i class="ph ph-envelope-simple" aria-hidden="true"></i>
+        <span data-email></span>
+      </div>
+      <div class="modal-actions">
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-action="mail"
+          data-mode="email"
+        >
+          <i class="ph ph-envelope-simple" aria-hidden="true"></i> Write an
+          email
+        </button>
+        <button type="button" class="btn btn-ghost" data-action="copy">
+          <i class="ph ph-copy" aria-hidden="true"></i>
+          <span data-copy-label>Copy address</span>
+        </button>
+      </div>
+      <p class="modal-note">
+        No email app opens? Copy the address and paste it into your mail
+        service.
+      </p>
+    </template>
+
+    <!-- Contact: CV request -->
+    <template id="tpl-contact-cv">
+      <p class="modal-kicker">CV on request</p>
+      <h2 class="modal-title">Request my CV</h2>
+      <p class="modal-lead">
+        My CV includes personal contact details, so I share it directly by email
+        instead of hosting it publicly. Send a short message and I'll reply with
+        the latest version.
+      </p>
+      <div class="email-box">
+        <i class="ph ph-envelope-simple" aria-hidden="true"></i>
+        <span data-email></span>
+      </div>
+      <div class="modal-actions">
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-action="mail"
+          data-mode="cv"
+        >
+          <i class="ph ph-file-text" aria-hidden="true"></i> Write the request
+        </button>
+        <button type="button" class="btn btn-ghost" data-action="copy">
+          <i class="ph ph-copy" aria-hidden="true"></i>
+          <span data-copy-label>Copy address</span>
+        </button>
+      </div>
+      <p class="modal-note">
+        The message is pre-filled, so you only need to add your name.
+      </p>
+    </template>
+
+    <!-- Project: Thesis -->
+    <template id="tpl-thesis">
+      <p class="modal-kicker">Thesis · ML / NLP</p>
+      <h2 class="modal-title">Resume Screening Decision Support System</h2>
+      <p class="modal-lead">
+        Final-project prototype that ranks candidates against job roles. The
+        research compares TF-IDF and S-BERT feature representations with a
+        Random Forest classifier.
+      </p>
+      <!-- Tambah screenshot: <img class="modal-shot" src="img/projects/thesis.webp" alt="..." /> -->
+      <ul class="modal-list">
+        <li>
+          Built a prototype ranking candidates by matching score across 32 job
+          roles using TF-IDF and a Random Forest classifier.
+        </li>
+        <li>
+          Applied preprocessing identical to model training and masked role
+          names to prevent label leakage.
+        </li>
+        <li>
+          Displayed ranked results and bar charts as initial recommendations to
+          support, not replace, HR decisions.
+        </li>
+        <li>Findings published in Jurnal Sinkron (SINTA 3, 2026).</li>
+      </ul>
+      <ul class="chips">
+        <li>Python</li>
+        <li>TF-IDF</li>
+        <li>Sentence-BERT</li>
+        <li>Random Forest</li>
+        <li>Jupyter / Colab</li>
+      </ul>
+      <div class="modal-actions">
+        <a class="btn btn-primary" data-link="pubSinkron" hidden>
+          Read the article
+          <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </template>
+
+    <!-- Project: KosConnect -->
+    <template id="tpl-kos">
+      <p class="modal-kicker">Fullstack Developer · Live</p>
+      <h2 class="modal-title">KosConnect, Kos Rental Platform</h2>
+      <p class="modal-lead">
+        A boarding-house (kos) rental platform where admins, owners and seekers
+        each get their own workflow.
+      </p>
+      <ul class="modal-list">
+        <li>
+          Developed a multi-role system (admin, owner, seeker) with Google Login
+          and the Midtrans API.
+        </li>
+        <li>
+          Designed the fullstack logic with a clean UI using Go, MongoDB,
+          HTML/CSS and vanilla JavaScript.
+        </li>
+        <li>
+          Documented the Google OAuth and Midtrans integration in a journal
+          article (Jurnal Processor, SINTA 4, 2025).
+        </li>
+      </ul>
+      <ul class="chips">
+        <li>Go</li>
+        <li>MongoDB</li>
+        <li>Vanilla JS</li>
+        <li>Google OAuth</li>
+        <li>Midtrans</li>
+      </ul>
+      <div class="modal-actions">
+        <a
+          class="btn btn-primary"
+          href="https://kosconnect.github.io"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Live demo <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+        </a>
+        <a
+          class="btn btn-ghost"
+          href="https://github.com/kosconnect"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="ph ph-github-logo" aria-hidden="true"></i> GitHub
+        </a>
+        <a class="btn btn-ghost" data-link="pubProcessor" hidden>
+          Read the article
+        </a>
+      </div>
+    </template>
+
+    <!-- Project: DHCIP -->
+    <template id="tpl-dhcip">
+      <p class="modal-kicker">Perum DAMRI · Intern, Digital Services</p>
+      <h2 class="modal-title">DHCIP HR Analytics Platform</h2>
+      <div class="modal-meta">
+        <span>Oct 2025 – Dec 2025</span><span>Hybrid</span>
+      </div>
+      <p class="modal-lead">
+        HR analytics platform built with the DAMRI digital team. My part covered
+        process mapping, UI/UX design, front-end components and documentation.
+      </p>
+      <ul class="modal-list">
+        <li>
+          Mapped business processes using BPMN (Bizagi), clarifying workflow
+          logic for the development team.
+        </li>
+        <li>
+          Designed nearly all Figma UI/UX for the 3 core user roles, including a
+          Nine-Box Talent Matrix visualization and an AI-based talent
+          recommendation interface.
+        </li>
+        <li>
+          Developed front-end components with Tailwind CSS and CodeIgniter 4.
+        </li>
+        <li>
+          Compiled the application user manual. The software and the manual are
+          both registered as Intellectual Property (HKI).
+        </li>
+        <li>
+          Part of the Industry-Driven Research Commercialization Program with
+          Perum DAMRI (Kemendiktisaintek RI), recognized with the Outstanding
+          Student Award, 2025.
+        </li>
+      </ul>
+      <ul class="chips">
+        <li>BPMN (Bizagi)</li>
+        <li>Figma</li>
+        <li>Tailwind CSS</li>
+        <li>CodeIgniter 4</li>
+        <li>Technical documentation</li>
+      </ul>
+    </template>
+
+    <!-- Project: Museum Geologi -->
+    <template id="tpl-museum">
+      <p class="modal-kicker">Museum Geologi (KESDM RI) · Intern</p>
+      <h2 class="modal-title">Digital Monitoring System for Asset Damage</h2>
+      <div class="modal-meta">
+        <span>Aug 2024 – Oct 2024</span><span>Bandung, West Java</span>
+      </div>
+      <p class="modal-lead">
+        System design for monitoring damage to museum assets, from process flow
+        to screens.
+      </p>
+      <ul class="modal-list">
+        <li>
+          Designed DFD, ERD and high-fidelity UI mockups for the monitoring
+          system.
+        </li>
+        <li>
+          Analyzed sentiment in Google Reviews and visualized the results with
+          Voyant Tools for the 2024 Public Consultation Forum (FKP)
+          presentation.
+        </li>
+        <li>
+          Supported the WBK integrity effort by reformatting official documents
+          and creating a feedback form.
+        </li>
+      </ul>
+      <ul class="chips">
+        <li>DFD</li>
+        <li>ERD</li>
+        <li>UI mockups</li>
+        <li>Voyant Tools</li>
+      </ul>
+    </template>
+
+    <!-- Project: LogicCoffee -->
+    <template id="tpl-logic">
+      <p class="modal-kicker">Fullstack Developer · Live</p>
+      <h2 class="modal-title">LogicCoffee, Coffee Shop Web App</h2>
+      <p class="modal-lead">
+        A coffee shop website with a WhatsApp-based login system, built and
+        deployed end to end.
+      </p>
+      <ul class="modal-list">
+        <li>
+          Built the backend with Go and MongoDB and the front end with vanilla
+          JavaScript.
+        </li>
+        <li>Implemented a WhatsApp-based login integration.</li>
+        <li>Deployed the site and keep it live.</li>
+      </ul>
+      <ul class="chips">
+        <li>Go</li>
+        <li>MongoDB</li>
+        <li>Vanilla JS</li>
+      </ul>
+      <div class="modal-actions">
+        <a
+          class="btn btn-primary"
+          href="https://logiccoffee.id.biz.id"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Live demo <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </template>
+
+    <!-- Project: Explora Nusantara -->
+    <template id="tpl-explora">
+      <p class="modal-kicker">Freelance Web Developer &amp; Maintainer</p>
+      <h2 class="modal-title">Trade Monitoring Platform, Explora Nusantara</h2>
+      <div class="modal-meta">
+        <span>Sept 2025 – Apr 2026</span><span>Remote</span>
+      </div>
+      <p class="modal-lead">
+        Maintenance and improvements for an international trade monitoring
+        platform prototype, delivered across 3 work periods (~2 weeks total).
+      </p>
+      <ul class="modal-list">
+        <li>
+          Fixed Zoom trade meeting access control, enforcing approval status and
+          expiry notifications.
+        </li>
+        <li>Replaced dummy dashboard data with real-time, responsive data.</li>
+        <li>
+          Improved UX across the platform, including input validation, hover
+          states and an address popup.
+        </li>
+        <li>
+          Implemented a structured transaction ID format and enforced order
+          status rules, including preventing cancellation of completed
+          transactions.
+        </li>
+        <li>
+          Listed among my registered HKI: Export Transaction Innovation Module
+          for MSMEs via Explora Nusantara.
+        </li>
+      </ul>
+      <ul class="chips">
+        <li>Laravel 11</li>
+        <li>Livewire</li>
+        <li>Blade</li>
+        <li>Tailwind CSS</li>
+        <li>MySQL</li>
+      </ul>
+    </template>
+
+    <!-- HKI -->
+    <template id="tpl-hki">
+      <p class="modal-kicker">Intellectual property</p>
+      <h2 class="modal-title">Registered IP Rights (HKI)</h2>
+      <p class="modal-lead">
+        Three registered HKI, from software and its documentation to a module
+        for MSME exporters.
+      </p>
+      <ul class="hki-list">
+        <li>
+          <span class="lead-icon"
+            ><i class="ph ph-code" aria-hidden="true"></i
+          ></span>
+          <div>
+            <strong>DHCIP Software</strong>
+            <p>HR analytics platform built with Perum DAMRI.</p>
+          </div>
+        </li>
+        <li>
+          <span class="lead-icon"
+            ><i class="ph ph-book-open" aria-hidden="true"></i
+          ></span>
+          <div>
+            <strong>DHCIP User Manual</strong>
+            <p>Application user manual I compiled during the internship.</p>
+          </div>
+        </li>
+        <li>
+          <span class="lead-icon"
+            ><i class="ph ph-tree-structure" aria-hidden="true"></i
+          ></span>
+          <div>
+            <strong>Export Transaction Innovation Module for MSMEs</strong>
+            <p>Delivered via Explora Nusantara.</p>
+          </div>
+        </li>
+      </ul>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-ghost" data-modal="tpl-certs">
+          <i class="ph ph-certificate" aria-hidden="true"></i> Open certificates
+        </button>
+      </div>
+    </template>
+
+    <!-- Certificates gallery (size: wide) -->
+    <template id="tpl-certs" data-size="wide">
+      <p class="modal-kicker">Gallery</p>
+      <h2 class="modal-title">Certificates &amp; documents</h2>
+      <p class="modal-lead">
+        Tap an image to enlarge it. Sensitive details such as ID numbers are
+        hidden on purpose.
+      </p>
+      <!--
+        CARA MENAMBAH GAMBAR SERTIFIKAT:
+        1. Simpan file di folder img/certs/ (format .webp atau .jpg, di bawah 300 KB).
+        2. Di dalam <div class="cert-thumb"> tambahkan:
+           <img src="img/certs/nama-file.webp" alt="Deskripsi sertifikat" loading="lazy" />
+        Kalau belum ada gambar, kotak tetap tampil dengan ikon.
+        Untuk sertifikat baru, salin satu blok <figure class="cert"> lalu ubah teksnya.
+      -->
+      <div class="cert-grid">
+        <figure class="cert">
+          <div class="cert-thumb">
+            <i class="ph ph-trophy" aria-hidden="true"></i>
+          </div>
+          <figcaption>
+            <strong>Outstanding Student Award</strong>
+            <span
+              >Industry-Driven Research Commercialization Program ·
+              Kemendiktisaintek RI with Perum DAMRI · 2025</span
+            >
+          </figcaption>
+        </figure>
+        <figure class="cert">
+          <div class="cert-thumb">
+            <i class="ph ph-seal-check" aria-hidden="true"></i>
+          </div>
+          <figcaption>
+            <strong>HKI: DHCIP Software</strong>
+            <span>Registered intellectual property · Perum DAMRI</span>
+          </figcaption>
+        </figure>
+        <figure class="cert">
+          <div class="cert-thumb">
+            <i class="ph ph-seal-check" aria-hidden="true"></i>
+          </div>
+          <figcaption>
+            <strong>HKI: DHCIP User Manual</strong>
+            <span>Registered intellectual property · Perum DAMRI</span>
+          </figcaption>
+        </figure>
+        <figure class="cert">
+          <div class="cert-thumb">
+            <i class="ph ph-seal-check" aria-hidden="true"></i>
+          </div>
+          <figcaption>
+            <strong>HKI: Export Transaction Innovation Module</strong>
+            <span>Registered intellectual property · Explora Nusantara</span>
+          </figcaption>
+        </figure>
+        <figure class="cert">
+          <div class="cert-thumb">
+            <i class="ph ph-certificate" aria-hidden="true"></i>
+          </div>
+          <figcaption>
+            <strong>MATLAB (ISI nama kursus)</strong
+            ><span>ISI penerbit · ISI tahun</span>
+          </figcaption>
+        </figure>
+        <figure class="cert">
+          <div class="cert-thumb">
+            <i class="ph ph-certificate" aria-hidden="true"></i>
+          </div>
+          <figcaption>
+            <strong>Java Fundamentals</strong
+            ><span>ISI penerbit · ISI tahun</span>
+          </figcaption>
+        </figure>
+      </div>
+    </template>
+    <template id="tpl-moments" data-size="wide">
+      <p class="modal-kicker">Moments</p>
+      <h2 class="modal-title">Events &amp; activities</h2>
+      <p class="modal-lead">
+        A few moments from events I hosted, mentored and organized.
+      </p>
+      <div class="cert-grid">
+        <figure class="cert">
+          <div class="cert-thumb">
+            <i class="ph ph-microphone-stage" aria-hidden="true"></i>
+            <img
+              src="img/moments/mc.webp"
+              alt="Hosting a campus event as MC"
+              loading="lazy"
+            />
+          </div>
+          <figcaption>
+            <strong>Master of Ceremony</strong><span>Nama acara · tahun</span>
+          </figcaption>
+        </figure>
+        <figure class="cert">
+          <div class="cert-thumb">
+            <i class="ph ph-users-three" aria-hidden="true"></i>
+            <img
+              src="img/moments/pkkmb.webp"
+              alt="Mentoring new students at PKKMB 2023"
+              loading="lazy"
+            />
+          </div>
+          <figcaption>
+            <strong>Mentor PKKMB 2023</strong><span>ULBI</span>
+          </figcaption>
+        </figure>
+        <!-- salin satu blok <figure> lagi untuk tiap foto tambahan -->
+      </div>
+    </template>
+    <script src="script.js" defer></script>
   </body>
 </html>
-<script>
-  // Tutup modal saat klik tombol
-  document.getElementById("startBtn").addEventListener("click", () => {
-    document.getElementById("welcomeModal").style.display = "none";
-  });
-</script>
