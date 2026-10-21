@@ -2,7 +2,7 @@
    RESPONSIVE — Fathya Fathimah Azzahra Portfolio
    Loaded after style.css, so rules here override it.
    ========================================================= */
-
+/* gini */
 /* ---------- Small laptop (<= 1100px) ---------- */
 @media (max-width: 1100px) {
   .nav-center {
