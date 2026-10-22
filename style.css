@@ -1057,6 +1057,7 @@ img {
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--accent, #9b1c3a);
+  display: inline-block; margin-top: 4px; 
 }
 .lead-icon {
   display: grid;
