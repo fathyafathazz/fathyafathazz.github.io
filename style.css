@@ -1053,6 +1053,11 @@ img {
   display: block;
   margin-top: 4px;
 }
+.hki-page2 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent, #9b1c3a);
+}
 .lead-icon {
   display: grid;
   place-items: center;
