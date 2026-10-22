@@ -11,10 +11,10 @@
     // Link yang masih kosong ("") otomatis menyembunyikan tombolnya,
     // jadi tidak ada link mati di halaman.
     links: {
-      github: "", // isi: "https://github.com/username-kamu"
-      pubSinkron: "", // isi: link DOI / halaman artikel Jurnal Sinkron
-      pubProcessor: "", // isi: link DOI / halaman artikel Jurnal Processor
-      book: "", // isi: link buku (penerbit / toko)
+      github: "https://github.com/fathyafathazz", // isi: "https://github.com/username-kamu"
+      pubSinkron: "https://jurnal.polgan.ac.id/index.php/sinkron/article/view/16761", // isi: link DOI / halaman artikel Jurnal Sinkron
+      pubProcessor: "https://doi.org/10.33998/processor.2025.20.1.2185", // isi: link DOI / halaman artikel Jurnal Processor
+      book: "https://ebooks.gramedia.com/id/buku/tutorial-membuat-sistem-informasi-inventory-baju", // isi: link buku (penerbit / toko)
     },
 
     // Email tidak ditulis utuh di HTML dan tidak dipasang sebagai link mailto.

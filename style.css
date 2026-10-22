@@ -800,6 +800,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 0.55rem;
+  position: relative;
   transition:
     transform 0.45s var(--ease),
     box-shadow 0.45s var(--ease),
@@ -838,6 +839,12 @@ img {
   background: var(--accent);
   color: #fff;
   transform: rotate(-8deg);
+}
+.ach-action[href]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
 }
 .badge {
   padding: 0.28rem 0.75rem;
