@@ -1,0 +1,344 @@
+/* =========================================================
+   Tambahan khusus halaman jasa.
+   Warna, font, kartu, tombol, popup dan animasi diambil dari
+   ../style.css dan ../responsive.css (sama dengan portofolio).
+   ========================================================= */
+
+/* ---------- Layar pertama ---------- */
+.connect-text {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+.connect-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: auto;
+  padding-top: 0.8rem;
+}
+.connect-actions .btn {
+  justify-content: center;
+}
+
+/* ---------- Kartu jasa ---------- */
+.svc-list {
+  margin: 0.2rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+.svc-list li + li {
+  margin-top: 0.3rem;
+}
+.svc-price {
+  margin: 0.4rem 0 0;
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+}
+.ach.wide {
+  grid-column: 1 / -1;
+}
+.svc-cols {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.35rem 2.5rem;
+}
+.svc-cols li + li {
+  margin-top: 0;
+}
+.svc-cols strong {
+  color: var(--text);
+}
+
+/* ---------- Cara kerja ---------- */
+.process {
+  grid-column: 1 / -1;
+}
+.steps {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.steps li {
+  position: relative;
+  padding-top: 0.2rem;
+}
+.step-no {
+  display: block;
+  font-family: var(--font-script);
+  font-style: italic;
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.28;
+  transition:
+    opacity 0.4s ease,
+    transform 0.6s var(--ease);
+}
+.steps li:hover .step-no {
+  opacity: 0.7;
+  transform: translateY(-3px);
+}
+.steps h3 {
+  margin: 0.4rem 0 0.3rem;
+  font-size: 1.1rem;
+}
+.steps p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+/* ---------- FAQ ---------- */
+.faq {
+  grid-column: 1 / -1;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+.faq .card-label {
+  margin-bottom: 0.2rem;
+}
+.faq-a {
+  margin: 0 0 1.1rem;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+@media (min-width: 1025px) {
+  .faq {
+    grid-column: span 7;
+  }
+  .contact {
+    grid-column: span 5;
+  }
+}
+
+/* ---------- Form di popup ---------- */
+.form {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 1.1rem;
+}
+.field label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-family: var(--font-ui);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 0.75rem 0.95rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--card-strong);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.95rem;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+.field textarea {
+  resize: vertical;
+}
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+/* ---------- Responsif ---------- */
+@media (max-width: 1024px) {
+  .steps {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 720px) {
+  .steps {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.2rem;
+  }
+  .svc-cols {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .brand-full {
+    display: none;
+  }
+  .brand-short {
+    display: inline;
+  }
+}
+
+/* ---------- Pembeda layar pertama dari porto ---------- */
+.brand-tag {
+  margin-left: 0.55rem;
+  padding: 0.18rem 0.6rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.nav-out {
+  color: var(--muted);
+}
+
+/* kotak pilihan jasa menggantikan foto besar */
+.profile-card.svc-hub {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 1.3rem;
+  background: var(--accent);
+  color: #fff;
+}
+.svc-hub .card-label {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.75);
+  position: relative;
+  z-index: 1;
+}
+.svc-hub::before {
+  left: auto;
+  right: -3rem;
+  top: -3rem;
+  opacity: 0.12;
+}
+.hub-tile {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.9rem 1rem;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  text-decoration: none;
+  transition:
+    transform 0.45s var(--ease),
+    background-color 0.35s ease;
+}
+.hub-tile:hover,
+.hub-tile:focus-visible {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.22);
+}
+.hub-icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 0.85rem;
+  background: rgba(255, 255, 255, 0.18);
+  font-size: 1.3rem;
+}
+.hub-text {
+  display: grid;
+  gap: 0.15rem;
+  min-width: 0;
+}
+.hub-text strong {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+}
+.hub-text span {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.8);
+}
+.hub-text em {
+  font-style: normal;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+.hub-text em:empty {
+  display: none;
+}
+.hub-go {
+  margin-left: auto;
+  flex: none;
+  transition: transform 0.4s var(--ease);
+}
+.hub-tile:hover .hub-go {
+  transform: translateY(3px);
+}
+
+/* foto kecil di kartu "Kenapa Fathazz" */
+.about-head {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.about-head .card-label {
+  margin: 0;
+}
+.about-photo {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  background: linear-gradient(135deg, #cc979d, #bb7c1d);
+}
+
+/* kartu web: 4 kolom di desktop */
+[id^="jasa-"] {
+  scroll-margin-top: calc(var(--nav-h, 72px) + 1rem);
+}
+@media (min-width: 1025px) {
+  .a-3 {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 720px) {
+  .brand-tag {
+    margin-left: 0.4rem;
+  }
+}
+
+/* tablet & HP: kotak jasa selebar layar */
+@media (max-width: 1024px) {
+  .hero {
+    grid-column: 1 / -1;
+  }
+  .profile-card.svc-hub {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    min-height: 0;
+  }
+  .svc-hub .card-label {
+    grid-column: 1 / -1;
+  }
+}
+@media (max-width: 720px) {
+  .profile-card.svc-hub {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
